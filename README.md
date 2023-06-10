@@ -69,7 +69,7 @@ def upload_image_to_imgbb(image_path):
 
 #### Post a new ad:
 
-```http
+```https
   Post https://socialccapi.azurewebsites.net/api/v1/AnnuncioAPI/CreaAnnuncio
 ```
 
@@ -86,7 +86,7 @@ We have provided a public API endpoint **CreaAnnuncio** that doesn't require tok
 requests.post('https://api.imgbb.com/1/upload', payload, files=files)
 ```
 **Payolad** and **Files** must be json format like:
-```json
+```python
 payload = {
     'key': "553304cd513118a5ae948b8978f9743a",
 }
