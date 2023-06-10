@@ -4,7 +4,7 @@ import requests
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import json
 
-bot = Bot(token='6170030420:AAGykzlmFUfoGQUDQOxVtgKcCulQZLLgZKQ')
+bot = Bot(token='YOUR_TELEGRAM_BOT_TOKEN')
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
@@ -123,7 +123,7 @@ async def handle_image(message: types.Message):
 def upload_image_to_imgbb(image_path):
     # Prepare the POST request parameters
     payload = {
-        'key': "553304cd513118a5ae948b8978f9743a",
+        'key': "YOUR_IMGBB_API_KEY",
     }
     files = {
         'image': open(image_path, 'rb'),
